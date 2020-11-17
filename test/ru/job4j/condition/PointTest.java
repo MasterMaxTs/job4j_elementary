@@ -38,5 +38,6 @@ public class PointTest {
         double expected = 2.82;
         double rsl = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, rsl, 0.01);
+
     }
 }
