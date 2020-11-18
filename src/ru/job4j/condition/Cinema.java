@@ -11,8 +11,8 @@ public class Cinema {
     }
 
     public static void main(String[] args) {
-        access(18);
-        access(21);
-        access(16);
+        Cinema.access(18);
+        Cinema.access(21);
+        Cinema.access(16);
     }
 }
