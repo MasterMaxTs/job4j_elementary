@@ -3,7 +3,7 @@ package ru.job4j.loop;
 public class PrimeNumber {
     public static int calc(int finish) {
         int count = 0;
-        for (int i = 1; i <= finish; i++) {
+        for (int i = 2; i <= finish; i++) {
             if (CheckPrimeNumber.check(i)) {
                 count++;
             }
@@ -13,6 +13,6 @@ public class PrimeNumber {
 
     public static void main(String[] args) {
         int finish = 7;
-        System.out.println("Количество простых чисел в диапазоне (1 ; " + finish + ": " + calc(finish));
+        System.out.println("Количество простых чисел в диапазоне (2;" + finish + "): " + calc(finish));
     }
 }
