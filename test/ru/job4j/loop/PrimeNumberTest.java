@@ -8,7 +8,7 @@ public class PrimeNumberTest {
 
     @Test
     public void when5() {
-        assertThat(PrimeNumber.calc(5), is(3));
+        assertThat(PrimeNumber.calc(7), is(4));
     }
 
     @Test
