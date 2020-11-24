@@ -12,7 +12,7 @@ public class PrimeNumber {
     }
 
     public static void main(String[] args) {
-        int finish = 7;
+        int finish = 12;
         System.out.println("Количество простых чисел в диапазоне (2;" + finish + "): " + calc(finish));
     }
 }
