@@ -23,4 +23,37 @@ public class FindLoopTest {
         int expected = 4;
         assertThat(result, is(expected));
     }
+
+    @Test
+    public void weFind5() {
+        int[] array = new int[] {3, 7, 5, 12, -8, 7, 9};
+        int el = 7;
+        int start = 4;
+        int finish = 8;                                            // finish > array.length
+        int result = FindLoop.indexOf(array, el, start, finish);
+        int expected = 5;
+        assertThat(result, is(expected));
+    }
+
+    @Test
+    public void weFind1() {
+        int[] array = new int[] {3, 7, 5, 12, -8, 7, 9};
+        int el = 7;
+        int start = 0;
+        int finish = 5;
+        int result = FindLoop.indexOf(array, el, start, finish);
+        int expected = 1;
+        assertThat(result, is(expected));
+    }
+
+    @Test
+    public void weNotFind() {
+        int[] array = new int[] {3, 7, 5, 12};
+        int el = 7;
+        int start = 4;                                            // start > array.length
+        int finish = 6;
+        int result = FindLoop.indexOf(array, el, start, finish);
+        int expected = -1;
+        assertThat(result, is(expected));
+    }
 }
