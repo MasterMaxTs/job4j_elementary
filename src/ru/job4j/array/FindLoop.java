@@ -13,17 +13,10 @@ public class FindLoop {
 
     public static int indexOf(int[] data, int el, int start, int finish) {
         int rsl = -1;
-        if (start < data.length && finish <= data.length) {              //search in range index of array
-            for (int index = start; index < finish; index++) {
-                if (data[index] == el) {
-                    return index;
-                }
-            }
-        } else if (start < data.length && finish > data.length) {        // finish > array.length
-            for (int index = start; index < data.length; index++) {
-                if (data[index] == el) {
-                    return index;
-                }
+
+        for (int index = start; index <= finish; index++) {
+            if (data[index] == el) {
+                return index;
             }
         }
         return rsl;
@@ -34,7 +27,7 @@ public class FindLoop {
         int indexElOfArray = indexOf(arrayInt, 12);
         System.out.println(indexElOfArray);
 
-        int indexElOfArrayFromRange = indexOf(arrayInt, 5, 1, 7);
+        int indexElOfArrayFromRange = indexOf(arrayInt, 5, 3, 6);
         System.out.println(indexElOfArrayFromRange);
     }
 }
