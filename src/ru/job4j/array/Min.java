@@ -9,11 +9,21 @@ public class Min {
     public static int min(int[] array) {
         int min = array[0];
 
-        for (int i = 1; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] < min) {
                 min = array[i];
             }
         }
         return min;
+    }
+
+    public static int findMin(int[] array, int start, int finish) {
+        int minInRange = array[start];
+        for (int i = start; i <= finish; i++) {
+           if (array[i] < minInRange) {
+               minInRange = array[i];
+           }
+        }
+        return minInRange;
     }
 }
