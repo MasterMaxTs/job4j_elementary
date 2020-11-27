@@ -6,8 +6,9 @@ public class ReverseLoopForArray {
         for (int i = 0; i < numbers.length; i++) {
             System.out.println("Текущий элемент массива начиная с последнего: "
                     + numbers[numbers.length - 1 - i]);
-            if (numbers[numbers.length - 1 - i] % 2 == 0) {
-                System.out.println("Текущий чётный элемент массива начиная с последнего: "
+            if ((numbers.length - 1 - i) % 2 == 0) {
+                System.out.println("Текущее значение элемента массива с чётным "
+                        + "индексом начиная с последнего: "
                         + numbers[numbers.length - 1 - i]);
             }
         }
