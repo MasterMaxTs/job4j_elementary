@@ -9,7 +9,7 @@ public class SortSelectedTest {
 
     @Test
     public void whenSort() {
-        assertThat(SortSelected.sort(new int[] {2, 7, 5, 9, 1}),
-                is(new int[] {1, 2, 5, 7, 9}));
+        assertThat(SortSelected.sort(new int[] {2, 7, 5, 9, 1, 2, 1}),
+                is(new int[] {1, 1, 2, 2, 5, 7, 9}));
     }
 }
