@@ -10,8 +10,4 @@ public class EndsWith {
         }
         return result;
     }
-
-    public static void main(String[] args) {
-
-    }
 }
