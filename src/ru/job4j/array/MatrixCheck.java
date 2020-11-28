@@ -11,12 +11,25 @@ public class MatrixCheck {
         return result;
     }
 
+    public static boolean monoVertical(char[][] board, int column) {
+        boolean result = true;
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                if (board[i][column] != 'X') {
+                    return false;
+                }
+            }
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
-        int row = 2;
+        int row = 1;
+        int column = 2;
         char[][] matrixChar = {
-                {'H', 'e', 'l', 'l', 'o'},
+                {'H', 'e', 'X', 'l', 'o'},
                 {'X', 'X', 'X', 'X'},
-                {'H', 'o', 'w', ' ', 'Y', 'o', 'u'},
+                {'H', 'o', 'X', ' ', 'Y', 'o', 'u'},
         };
 
         for (int i = 0; i < matrixChar.length; i++) {
@@ -27,6 +40,7 @@ public class MatrixCheck {
         }
 
         System.out.println(row + " row. Result is " + monoHorizontal(matrixChar, row));
+        System.out.println(column + " column. Result is " + monoVertical(matrixChar, column));
     }
 }
 
