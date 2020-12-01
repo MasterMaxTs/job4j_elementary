@@ -13,16 +13,11 @@ public class Machine {
 
         for (int i = 0; i < coins.length; i++) {
             while (rem >= coins[i]) {
-                int count = rem / coins[i];
-                rem %= coins[i];
-
-                for (int j = 0; j < count; j++) {
-                   change[size] = coins[i];
-                   size++;
+                rem -= coins[i];
+                change[size] = coins[i];
+                size++;
                 }
             }
-        }
         return Arrays.copyOf(change, size);
     }
-
 }
