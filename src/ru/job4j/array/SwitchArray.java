@@ -21,7 +21,6 @@ public class SwitchArray {
             System.out.print(arr);
         }
         System.out.println();
-
         int[] rslSwap = swap(nums, 3, 5);
         for (int el : rslSwap) {
             System.out.print(el);

@@ -1,8 +1,8 @@
 package ru.job4j.condition;
 
 public class Cinemaa {
-    public  static void permission(boolean allowByParent, boolean hasMoney) {
-        if (allowByParent && hasMoney) {
+    public  static void permission(boolean permission, boolean money) {
+        if (permission && money) {
             System.out.println("I can go to the cinema.");
         } else {
             System.out.println("I can't.");

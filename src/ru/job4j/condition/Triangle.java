@@ -9,11 +9,12 @@ public class Triangle {
         double ab = 5;
         double ac = 7;
         double bc = 10;
-
         if (exist(ab, ac, bc)) {
-            System.out.println("Треуголник со сторонами ab = " + ab + " ac = " + ac + "bc = " + bc + " существует");
+            System.out.println("Треуголник со сторонами ab = " + ab + " ac = "
+                    + ac + "bc = " + bc + " существует");
         } else {
-            System.out.println("Треуголник со сторонами ab = " + ab + " ac = " + ac + "bc = " + bc + " не существует!");
+            System.out.println("Треуголник со сторонами ab = " + ab + " ac = "
+                    + ac + "bc = " + bc + " не существует!");
         }
     }
 }

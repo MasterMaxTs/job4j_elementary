@@ -12,14 +12,12 @@ public class Check {
     }
 
     public static void main(String[] args) {
-        boolean[] dataBoolean = new boolean[] {true, true, false, true};
-        boolean rst = mono(dataBoolean);
-
-        for (boolean value : dataBoolean) {
+        boolean[] data = new boolean[] {true, true, false, true};
+        boolean rst = mono(data);
+        for (boolean value : data) {
             System.out.print(value);
         }
         System.out.println();
         System.out.println("Result is: " + rst);
     }
-
 }

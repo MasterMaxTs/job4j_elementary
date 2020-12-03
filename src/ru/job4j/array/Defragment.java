@@ -4,23 +4,21 @@ public class Defragment {
     public static void main(String[] args) {
         String[] input = {"I", null, "wanna", null, "be", null, "compressed"};
         String[] compress = compress(input);
-
         for (String str : compress) {
             System.out.print(str + " ");
         }
     }
 
     public static String[] compress(String[] array) {
-        int nullIndex;
-        int notNullIndex;
-
+        int index0;
+        int index1;
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null) {
-                nullIndex = i;
-                for (int j = nullIndex + 1; j < array.length; j++) {
+                index0 = i;
+                for (int j = index0 + 1; j < array.length; j++) {
                     if (array[j] != null) {
-                        notNullIndex = j;
-                        swap(array, nullIndex, notNullIndex);
+                        index1 = j;
+                        swap(array, index0, index1);
                         break;
                     }
                 }

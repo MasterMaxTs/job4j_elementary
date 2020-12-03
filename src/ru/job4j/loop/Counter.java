@@ -24,12 +24,10 @@ public class Counter {
                 + Counter.sum(0, 10));
         System.out.println("Сумма чётных чисел из диапазона (0;10) равна "
                 + Counter.sumByEven(0, 10));
-
         System.out.println("Сумма чисел из диапазона (3;8) равна "
                 + Counter.sum(3, 8));
         System.out.println("Сумма чётных чисел из диапазона (3;8) равна "
                 + Counter.sumByEven(3, 8));
-
         System.out.println("Сумма чисел из диапазона (1;1) равна "
                 + Counter.sum(1, 1));
         System.out.println("Сумма чётных чисел из диапазона (1;1) равна "

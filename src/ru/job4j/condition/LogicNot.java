@@ -25,10 +25,13 @@ public class LogicNot {
     public static void main(String[] args) {
         int num = 89;
         System.out.println("Число " + num + " - число чётное: " + isEven(num));
-        System.out.println("Число " + num + " - число положительное: " + isPositive(num));
-        System.out.println("Число " + num + " - число нечётное: " + notEven(num));
-        System.out.println("Число " + num + " - число нечётное и положительное:" + notEvenAndPositive(num));
-        System.out.println("Число " + num + " - число чётное или неположительное: " + evenOrNotPositive(num));
-
+        System.out.println("Число " + num + " - число положительное: "
+                + isPositive(num));
+        System.out.println("Число " + num + " - число нечётное: "
+                + notEven(num));
+        System.out.println("Число " + num + " - число нечётное и положительное:"
+                + notEvenAndPositive(num));
+        System.out.println("Число " + num + " - число чётное или неположительное: "
+                + evenOrNotPositive(num));
     }
 }

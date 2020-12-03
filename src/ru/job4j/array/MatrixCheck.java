@@ -49,14 +49,12 @@ public class MatrixCheck {
                 {'X', 'X', 'X', 'X'},
                 {'H', 'o', 'X', ' ', 'Y', 'o', 'u'},
         };
-
         for (int i = 0; i < matrixChar.length; i++) {
             for (int j = 0; j < matrixChar[i].length; j++) {
                 System.out.print(" " + matrixChar[i][j]);
             }
             System.out.println();
         }
-
         System.out.println(row + " row. Result is " + monoHorizontal(matrixChar, row));
         System.out.println(column + " column. Result is " + monoVertical(matrixChar, column));
     }

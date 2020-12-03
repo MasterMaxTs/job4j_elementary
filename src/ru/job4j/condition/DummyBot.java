@@ -16,14 +16,11 @@ public class DummyBot {
         System.out.println("Вы ввели: \"Привет, Бот.\"");
         String rsl = DummyBot.answer("Привет, Бот.");
         System.out.println(rsl);
-
         System.out.println("Вы ввели: \"Пока\"");
         rsl = DummyBot.answer("Пока");
         System.out.println(rsl);
-
         System.out.println("Вы ввели: \"Как дела?\"");
         rsl = DummyBot.answer("Как дела?");
         System.out.println(rsl);
-
     }
 }

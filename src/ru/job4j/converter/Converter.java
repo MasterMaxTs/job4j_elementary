@@ -10,7 +10,7 @@ public class Converter {
     }
 
     public static void main(String[] args) {
-        int in = 180;                            //rubles
+        int in = 180;
         int expected = 2;
         int out = Converter.rubleToEuro(in);
         boolean passed = expected == out;
@@ -19,7 +19,6 @@ public class Converter {
         out = Converter.rubleToDollar(in);
         passed = expected == out;
         System.out.println(in + " rubles are " + out + " usd. Test result: " + passed);
-
         int value = 140;
         int euro = Converter.rubleToEuro(value);
         System.out.println(value + " rubles are " + euro + " euro.");

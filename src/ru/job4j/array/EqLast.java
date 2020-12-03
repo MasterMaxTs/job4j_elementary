@@ -5,7 +5,4 @@ public class EqLast {
         return left[left.length - 1] == right[right.length - 1];
     }
 
-    public static void main(String[] args) {
-
-    }
 }

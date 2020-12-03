@@ -16,13 +16,13 @@ public class MultipleSwitchWeek {
 
     public static void main(String[] args) {
         String name = "Среда";
-        System.out.println("День недели " + name + " соотвествует порядковому номеру " + MultipleSwitchWeek.numberOfDay(name));
-
+        System.out.println("День недели " + name + " соотвествует порядковому номеру "
+                + MultipleSwitchWeek.numberOfDay(name));
         name = "Saturday";
-        System.out.println("День недели " + name + " соотвествует порядковому номеру " + MultipleSwitchWeek.numberOfDay(name));
-
+        System.out.println("День недели " + name + " соотвествует порядковому номеру "
+                + MultipleSwitchWeek.numberOfDay(name));
         name = "Все равно!";
-        System.out.println("День недели " + name + " соотвествует порядковому номеру " + MultipleSwitchWeek.numberOfDay(name));
-
+        System.out.println("День недели " + name + " соотвествует порядковому номеру "
+                + MultipleSwitchWeek.numberOfDay(name));
     }
 }

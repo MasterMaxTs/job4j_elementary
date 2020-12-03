@@ -8,7 +8,6 @@ public class Min {
 
     public static int min(int[] array) {
         int min = array[0];
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] < min) {
                 min = array[i];
@@ -18,12 +17,12 @@ public class Min {
     }
 
     public static int findMin(int[] array, int start, int finish) {
-        int minInRange = array[start];
+        int min = array[start];
         for (int i = start; i <= finish; i++) {
-           if (array[i] < minInRange) {
-               minInRange = array[i];
+           if (array[i] < min) {
+               min = array[i];
            }
         }
-        return minInRange;
+        return min;
     }
 }

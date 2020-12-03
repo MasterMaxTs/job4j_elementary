@@ -13,10 +13,10 @@ public class Matrix {
 
     public static void main(String[] args) {
         int size = 9;
-        int[][]multipleTable = multiple(size);
-        for (int i = 0; i < multipleTable.length; i++) {
-            for (int j = 0; j < multipleTable.length; j++) {
-                System.out.print(" " + multipleTable[i][j]);
+        int[][]table = multiple(size);
+        for (int i = 0; i < table.length; i++) {
+            for (int j = 0; j < table.length; j++) {
+                System.out.print(" " + table[i][j]);
             }
             System.out.println();
         }

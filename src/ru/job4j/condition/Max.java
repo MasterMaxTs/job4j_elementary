@@ -9,7 +9,6 @@ public class Max {
     public static void main(String[] args) {
         int rsl = Max.max(3, 6);
         System.out.println(rsl);
-
         rsl = Max.max(0, -34);
         System.out.println(rsl);
     }

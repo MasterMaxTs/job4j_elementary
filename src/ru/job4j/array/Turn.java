@@ -20,7 +20,6 @@ public class Turn {
     public static void main(String[] args) {
         int[] input = new int[] {1, 2, 3, 4, 5};
         viewOfArray(input);
-
         int[] output = back(input);
         viewOfArray(output);
 

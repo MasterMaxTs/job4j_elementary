@@ -14,6 +14,6 @@ public class ArrayChar {
     public static void main(String[] args) {
         char[] word = new char[] {'H', 'e', 'l', 'l', 'o'};
         char[] pref = new char[] {'H', 'i'};
-        System.out.println(startsWith(word, pref));                 // false
+        System.out.println(startsWith(word, pref));
     }
 }

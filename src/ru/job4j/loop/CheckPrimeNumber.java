@@ -16,10 +16,10 @@ public class CheckPrimeNumber {
     public static void main(String[] args) {
         int number = 67;
         check(number);
-       if (check(number)) {
+        if (check(number)) {
             System.out.println(number + " - простое число");
         } else {
            System.out.println(number + " - непростое число");
-       }
+        }
     }
 }
