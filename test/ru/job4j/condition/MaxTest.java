@@ -13,14 +13,14 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMaxMin2To3Then3() {
-        int rsl = Max.max(-2, 3);
-        assertThat(rsl, is(3));
+    public void whenAre596Then9() {
+        int rsl = Max.max(5, 9, 6);
+        assertThat(rsl, is(9));
     }
 
     @Test
-    public void whenMax5To5Then5() {
-        int rsl = Max.max(5, 5);
+    public void whenAre3521Then5() {
+        int rsl = Max.max(3, 5, 2, 1);
         assertThat(rsl, is(5));
     }
 }
