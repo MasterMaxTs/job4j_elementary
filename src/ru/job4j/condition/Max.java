@@ -7,13 +7,12 @@ public class Max {
     }
 
     public static int max(int num1, int num2, int num3) {
-        return num3 > max(num1, num2) ? num3 : max(num1, num2);
+        return max(num1, max(num2, num3));
     }
 
     public static int max(int num1, int num2, int num3, int num4) {
-        return max(num1, num2) > max(num3, num4) ? max(num1, num2) : max(num3, num4);
+        return max(num1, max(num2, max(num3, num4)));
     }
-
     public static void main(String[] args) {
         int rsl = Max.max(3, 6);
         System.out.println(rsl);
