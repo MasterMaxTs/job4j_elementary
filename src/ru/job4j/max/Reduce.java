@@ -3,13 +3,13 @@ package ru.job4j.max;
 public class Reduce {
     private int[] array;
 
-    public void to(int[] arr) {
+    public void to(int[] array) {
         /**
          * array = array - запись не допустима, т.к. компилятор обработает
          * данную переменную как локальную, и ссылочная переменная замкнётся сама на себя.
          * Таким образом, в метод print() будет передан пустой массив.
          */
-        array = arr;
+        this.array = array;               /** обращение к переменной объекта при вызове метода  */
     }
 
     public void print() {
