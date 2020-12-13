@@ -16,6 +16,7 @@ public class Matches {
             Scanner scanner = new Scanner(System.in);
             int select = Integer.parseInt(scanner.nextLine());
             value -= select;
+            System.out.println("There were " + value +  " matches left on the table");
             count++;
         }
     }
