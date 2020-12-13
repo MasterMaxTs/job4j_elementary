@@ -11,23 +11,12 @@ public class Matches {
         return count % 2 == 0 ? 2 : 1;
     }
 
-    public static boolean validate(int select) {
-        boolean rsl = false;
-        for (int i = 0; i < ARRAY.length; i++) {
-            if (ARRAY[i] == select) {
-                return true;
-            }
-        }
-        return rsl;
-    }
-
-
     public static void selecting() {
         while (value > 3) {
             System.out.println("Player #" + getPlayer(count) + " is choosing from 1 to 3 match: ");
             Scanner scanner = new Scanner(System.in);
             int select = Integer.parseInt(scanner.nextLine());
-            if (validate(select)) {
+            if (select > 0 && select < 4) {
                 value -= select;
                 System.out.println("There were " + value + " matches left on the table");
                 count++;
