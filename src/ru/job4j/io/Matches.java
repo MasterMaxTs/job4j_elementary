@@ -20,7 +20,6 @@ public class Matches {
                 System.out.println("There were " + value + " matches left on the table");
                 if (value == 0) {
                     System.out.println("Player #" + getPlayer(count) + " is win!");
-                    break;
                 }
                 count++;
             }
