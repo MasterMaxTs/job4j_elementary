@@ -18,12 +18,10 @@ public class Matches {
             if (select > 0 && select < 4) {
                 value -= select;
                 System.out.println("There were " + value + " matches left on the table");
-                if (value == 0) {
-                    System.out.println("Player #" + getPlayer(count) + " is win!");
-                }
                 count++;
             }
         }
+        System.out.println("Player #" + getPlayer(count - 1) + " is win!");
     }
 
     public static void main(String[] args) {
