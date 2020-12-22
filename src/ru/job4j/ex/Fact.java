@@ -11,8 +11,6 @@ public class Fact {
         int rsl = 1;
         if(n < 0) {
             throw new IllegalArgumentException("factorial of negative number does not exist!");
-        } else if (n == 0) {
-            return rsl;
         } else {
             for (int i = 1; i <= n; i++) {
                 rsl *= i;
