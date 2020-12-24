@@ -8,12 +8,12 @@ public class Fact {
     }
 
     public int calc(int n) {
+        if(n < 0) {
+            throw new IllegalArgumentException("factorial of negative number does not exist!");
+        }
         int rsl = 1;
         for (int i = 1; i <= n; i++) {
             rsl *= i;
-        }
-        if(n < 0) {
-            throw new IllegalArgumentException("factorial of negative number does not exist!");
         }
         return rsl;
     }
