@@ -10,11 +10,11 @@ public class Program {
     }
 
     public static FactoryDeveloper getDeveloperBySpeciality(String speciality) {
-        if (speciality.equals("Java")) {
+        if (speciality.equalsIgnoreCase("Java")) {
             return new FactoryJavaDeveloper();
-        } else if (speciality.equals("C++")) {
+        } else if (speciality.equalsIgnoreCase("C++")) {
             return new FactoryCppDeveloper();
-        } else if (speciality.equals("PHP")) {
+        } else if (speciality.equalsIgnoreCase("Php")) {
             return new PhpFactoryDeveloper();
         } else {
             throw new RuntimeException(speciality + "is unknown!");
