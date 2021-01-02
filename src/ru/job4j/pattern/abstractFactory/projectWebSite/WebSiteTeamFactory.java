@@ -8,9 +8,16 @@ import ru.job4j.pattern.abstractFactory.projectBanking.QATester;
 
 public class WebSiteTeamFactory implements ProjectTeamFactory {
     @Override
-    public Developer createDeveloper() {
-        return new PhpDeveloper();
+    public Developer createDeveloper(String speciality) {
+        if ("PHP".equalsIgnoreCase(speciality)) {
+            return new PhpDeveloper();
+        } else if ("JS".equalsIgnoreCase(speciality)) {
+            return new JsDeveloper();
+        } else {
+            throw new RuntimeException(speciality + " is unknown speciality!");
+        }
     }
+
 
     @Override
     public Tester createManualTester() {

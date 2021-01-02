@@ -9,8 +9,14 @@ public class BankingTeamFactory implements ProjectTeamFactory {
 
 
     @Override
-    public Developer createDeveloper() {
-        return new JavaDeveloper();
+    public Developer createDeveloper(String speciality) {
+        if ("Java".equalsIgnoreCase(speciality)) {
+            return new JavaDeveloper();
+        } else if ("Python".equalsIgnoreCase(speciality)) {
+            return new PyDeveloper();
+        } else {
+            throw new RuntimeException(speciality + " is unknown speciality!");
+        }
     }
 
     @Override

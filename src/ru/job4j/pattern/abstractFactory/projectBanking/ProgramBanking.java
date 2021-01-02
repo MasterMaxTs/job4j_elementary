@@ -8,7 +8,9 @@ public class ProgramBanking {
 
         /* Цель - есть проект.
         * Необходимо создать команду разработчиков целиком для реализации проекта
-        * Пример команды для разработки Банковского приложения:*/
+        * Пример команды для разработки Банковского приложения:*
+        * В планах на будущее добавлять новых BE-разработчиков
+         */
 
         /**
          *  JavaDeveloper javaDeveloper = new JavaDeveloper();
@@ -26,11 +28,13 @@ public class ProgramBanking {
             /*Create object of factory*/
             BankingTeamFactory bankingTeam = new BankingTeamFactory();
             /*Create developers*/
-            Developer javaDeveloper = bankingTeam.createDeveloper();
+            Developer javaDeveloper = bankingTeam.createDeveloper("Java");
+            Developer pythonDeveloper = bankingTeam.createDeveloper("Python"); /*added py Developer*/
             Tester manualTester = bankingTeam.createManualTester();
             ProjectManager projectManager = bankingTeam.createPM();
             System.out.printf("Banking team is working...%n%n");
             javaDeveloper.writeCode();
+            pythonDeveloper.writeCode();
             manualTester.testCode();
             projectManager.manageProject();
         }
