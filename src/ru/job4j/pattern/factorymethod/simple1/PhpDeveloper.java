@@ -1,4 +1,4 @@
-package ru.job4j.pattern.factorymethod.simple1;
+package ru.job4j.pattern.factoryMethod.simple1;
 
 public class PhpDeveloper implements Developer{
     @Override

@@ -11,7 +11,7 @@ public class Transportation {
         Vehicle[] vehicles = {airplane1, airplane2, autoBus1, autoBus2, train1, train2};
         for(Vehicle tran : vehicles) {
             tran.move();
-            System.out.println("Accommodation " + "\"" + tran.getName() +"\"" + " is " + tran.accommodate());
+            System.out.println("Accommodation " + "\"" + tran.getInfo() +"\"" + " is " + tran.accommodate());
         }
     }
 }

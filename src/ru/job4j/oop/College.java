@@ -6,5 +6,6 @@ public class College {
          * Up casting */
         Student stFreshman = new Freshman();
         Object objFreshman = new Freshman();
+
     }
 }
