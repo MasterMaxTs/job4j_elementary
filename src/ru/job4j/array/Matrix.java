@@ -11,20 +11,14 @@ public class Matrix {
         return table;
     }
 
-    public static String showTable(int size) {
+    public static void main(String[] args) {
+        int size = 9;
         int[][]table = multiple(size);
-        StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < table.length; i++) {
             for (int j = 0; j < table.length; j++) {
-                stringBuilder.append("  ");
-                stringBuilder.append(table[i][j]);
+                System.out.print(" " + table[i][j]);
             }
-            stringBuilder.append("\n");
+            System.out.println();
         }
-        return stringBuilder.toString();
-    }
-
-    public static void main(String[] args) {
-        System.out.println(Matrix.showTable(9));
     }
 }

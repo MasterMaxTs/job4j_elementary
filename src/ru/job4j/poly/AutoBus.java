@@ -19,7 +19,7 @@ public class AutoBus implements Vehicle{
         return accommodation;
     }
 
-    public String getInfo() {
+    public String getName() {
         return name;
     }
 }
